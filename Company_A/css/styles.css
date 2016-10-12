@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Opificio';
+  src: url('opificio.eot');
+  src: url('opificio.eot?#iefix') format('embedded-opentype'),
+       url('opificio.woff') format('woff'),
+       url('opificio.ttf') format('truetype'),
+       url('opificio.svg#Opificio') format('svg');
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #373a3c;
+  background-color: white ;
+  font-family: 'Arial', sans-serif;
+}
+
+/**@media (min-width: 1200px)
+.container {
+max-width: none; 
+}**/
+
+
+/** HEADER **/
+.navbar{
+  border-radius: 0;
+  border: 0;
+  background-color: #34495e;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-light .navbar-brand { /* company name */
+  color: white;
+  font-family: 'Opificio',sans-serif;
+  font-size: 34.43px;
+}
+/** FOOTER **/
+
+.footer{ 
+  background-color: #34495e;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+
+
+/* intro */
+.jumbotron{
+  background-color: white;
+}
+.container.intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* cards*/
+.card{
+  border: none;
+  padding: 15px;
+}
+
+.card-header:first-child{
+  border-radius: 0px;
+  border-bottom: none;
+  color: white;
+}
+
+.card-footer:last-child{
+  border-radius: 0px;
+  background-color: #e6e9ed;
+  border: none;
+}
+
+.card-basic{
+  background-color: #4fc1e9;
+}
+.card-basic-body{
+  background-color: #d7f1fa; 
+}
+
+.card-unlimited{
+background-color: #ffce54;
+}
+
+.card-unlimited-body{
+  background-color: #fffaed; 
+}
+
+.card-btn{
+  border-radius: 0px;
+  color: white;
+  font-family: 'Microsoft YaHei'
+}
+
+/* CONTACT*/
+
+.contact{
+  padding-top: px;
+  padding-bottom: 50px;
+}
+
+.btn-contact{
+  background-color: #8cc152;
+  color: white ;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-xs{
+  background-color: #8cc152;
+  color: white ;
+ 
+  
+ 
+}
