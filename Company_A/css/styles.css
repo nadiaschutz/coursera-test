@@ -1,19 +1,29 @@
 @font-face {
   font-family: 'Opificio';
-  src: url('opificio.eot');
-  src: url('opificio.eot?#iefix') format('embedded-opentype'),
-       url('opificio.woff') format('woff'),
-       url('opificio.ttf') format('truetype'),
-       url('opificio.svg#Opificio') format('svg');
+  src: url('./../fonts/opificio.eot');
+  src: url('./../fonts/opificio.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/opificio.woff') format('woff'),
+        url('./../fonts/opificio.ttf') format('truetype'),
+        url('./../fonts/opificio.svg#Opificio') format('svg');
+}
+
+@font-face {font-family: "Microsoft YaHei";
+    src: url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot");
+    src: url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.svg#Microsoft YaHei") format("svg");
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: #373a3c;
   background-color: white ;
   font-family: 'Arial', sans-serif;
 }
+
 
 /**@media (min-width: 1200px)
 .container {
@@ -22,6 +32,19 @@ max-width: none;
 
 
 /** HEADER **/
+#container-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+#fb {
+  background: url('../images/facebook.png') no-repeat;
+  width: 10px;
+  height: 10px;
+  margin: 10px 15px 10px 0;
+}
 .navbar{
   border-radius: 0;
   border: 0;
@@ -32,10 +55,10 @@ max-width: none;
   text-decoration: none;
 }
 
-.navbar-light .navbar-brand { /* company name */
+.navbar-brand h1 { /* company name */
   color: white;
   font-family: 'Opificio',sans-serif;
-  font-size: 34.43px;
+  font-size: 39.43px;
 }
 /** FOOTER **/
 
@@ -44,7 +67,7 @@ max-width: none;
   color: white;
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 14px;
+  font-size: 13.8px;
 }
 
 
@@ -54,8 +77,14 @@ max-width: none;
 }
 .container.intro {
   padding-top: 30px;
-  padding-bottom: 30px;
+  font-size: 14px;
 }
+.intro h1{
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
+
 
 /* cards*/
 .card{
@@ -66,7 +95,24 @@ max-width: none;
 .card-header:first-child{
   border-radius: 0px;
   border-bottom: none;
+  }
+
+.card-header {
   color: white;
+  font-family: 'Microsoft YaHei',sans-serif;
+}
+
+.card-header h1{
+  font-size: 30px;
+}
+
+.card-header h6{
+  font-size: 14px;
+}
+ 
+.card-block h4{
+  font-size: 19px;
+  font-family: 'Arial', sans-serif;
 }
 
 .card-footer:last-child{
@@ -93,28 +139,232 @@ background-color: #ffce54;
 .card-btn{
   border-radius: 0px;
   color: white;
-  font-family: 'Microsoft YaHei'
+  font-family: 'Microsoft YaHei',sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* CONTACT*/
 
 .contact{
-  padding-top: px;
-  padding-bottom: 50px;
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.contact h2{
+  font-family: 'Microsoft YaHei',sans-serif;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
 .btn-contact{
   background-color: #8cc152;
   color: white ;
-  margin-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
+  font-size: 18px;
 }
 
 .contact-xs{
   background-color: #8cc152;
   color: white ;
- 
+}
+
+hr.line-brand{
+  color: white;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+/*=========================
+  Icons
+ ================= */
+
+/*  social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left:0 !important;
+  padding: 0;
   
- 
+}
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+
+}
+.pull-right{
+  margin-top: 10px;
+}
+
+/* social icons */
+.social-network a.icoRss:hover {
+  background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+  background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+  background-color:#33ccff;
+}
+
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i{
+  color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+  color:#44BCDD;
+}
+
+.social-circle li a {
+  display:inline-block;
+  position:relative;
+  margin:0 auto 0 auto;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  text-align:center;
+  width: 40px;
+  height: 40px;
+  font-size:15px;
+}
+.social-circle li i {
+
+  margin:0px;
+  line-height:40px;
+  text-align: center;
+
+}
+
+.social-circle li a:hover i, .triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color:#34495e;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+
+}
+
+.social-circle a {
+ background-color: white;   
+}
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 993px) {
+  .list{
+  font-family: 'Microsoft YaHei',sans-serif;
+  line-height: 2.5;
+  } 
+  
+
+  .navbar-brand{
+    float: left;
+  }
+
+  #scale-dwn{
+    padding-top: 10px;
+    float: right;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Header */
+
+  .list{
+  font-family: 'Microsoft YaHei',sans-serif;
+  line-height: 2.5;
+  }
+  
+
+  .navbar-brand{
+    float: left;
+  }
+
+  #scale-dwn{
+    padding-top: 10px;
+    float: right;
+  }
+  /* End Header */
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 545px) and (max-width: 768px) {
+  .list{
+  font-family: 'Microsoft YaHei',sans-serif;
+  line-height: 2.5;
+  }
+  
+
+.list{
+  font-family: 'Microsoft YaHei',sans-serif;
+  line-height: 2.5;
+  }
+  
+
+  .navbar-brand{
+    float: left;
+  }
+
+  #scale-dwn{
+    padding-top: 10px;
+    float: right;
+  }
+}
+/********** Extra small devices only **********/
+@media (max-width: 544px) {
+  /* Header */
+  .navbar{
+     padding-bottom: 15px;
+  }
+
+  #container-navbar {
+    text-align: center;
+   
+  }
+
+  .navbar-brand{
+    float: none;
+    padding-top: 10px;
+  }
+
+  #scale-dwn{
+    -ms-transform: scale(0.7, 0.7); /* IE 9 */
+    -webkit-transform: scale(0.7, 0.7); /* Safari */
+    transform: scale(0.7, 0.7);
+  }
+
+   
+  
+
+
+  /* End Header */
+
+  .list{
+  font-family: 'Arial',sans-serif;
+  line-height: 2.0;
+  font-size: 12px;
+ }
 }

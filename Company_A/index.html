@@ -9,16 +9,43 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>-->
+    <link href="//db.onlinewebfonts.com/c/e63653407669814f5b0eb9bbdc175f77?family=Microsoft+YaHei" rel="stylesheet" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
+
 <body>
   <header>
-    <div class="container">
+    <div  id="container-navbar" class="container">
+
       <nav class="navbar navbar-full navbar-light ">
-        <h1 class="navbar-brand" href="#">Company A</h1>
-      </nav>
+      <div class="row"> 
+        <div class="col-xs-12 col-sm-6 col-md-6"> 
+        <div class="navbar-brand"> 
+          <a href="index.html"><h1>Company A</h1></a>
+          <hr class="hidden-sm-up line-brand">
+        </div>
+        </div>
+  
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div id="scale-dwn">
+            <ul class="social-network social-circle social-web">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+            </ul>       
+          </div>
+        </div>
+      </div>
+    </nav>
+      
+
+      
+        
     </div>
   </header><!-- #header-nav -->
 
+  
 
   <div class="container">
     <div class="row">
@@ -27,9 +54,11 @@
           <h1 class="text-center">Heading 1</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel molestie velit. Aliquam erat volutpat. Nunc eros purus, consequat quis nibh vel, ullamcorper faucibus felis. Vivamus egestas bibendum neque ut mattis. Cras vitae pretium enim, id dapibus nulla. Fusce cursus justo quam, vel dictum odio viverra at. Aenean dignissim libero nec est efficitur, a tincidunt orci elementum.</p>
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <li>Super Interesting Bullet Point 1</li>
-            <li>Super Interesting Bullet Point 2</li>
-            <li>Super Interesting Bullet Point 3</li>
+            <ul class="list">
+              <li>Super Interesting Bullet Point 1</li>
+              <li>Super Interesting Bullet Point 2</li>
+              <li>Super Interesting Bullet Point 3</li>
+            </ul> 
           </div>
         </div>
       </div>
@@ -40,36 +69,35 @@
 
   <div class="container">
     <div class="row">
-      <div class="container cards">
+      <div class="container">
         <div class="col-sm-6">
           <div class="card text-xs-center">
             <div class="card-header card-basic">
-              <h1 class="card-title">$299</h1>
-              <h6 class="card-title">per month</h6>
+              <h1 >$299</h1>
+              <h6 >per month</h6>
             </div>
             <div class="card-block card-basic-body">
-              <h4 class="card-title font-weight-bold">Basic</h4>
-              <p class="card-text">Lots of clients and users</p>
+              <h4 class="font-weight-bold">Basic</h4>
+              <p>Lots of clients and users</p>
               <hr class="m-y-2 card-basic">
-              <p class="card-text">250 CKU's <br>1 GB Storage<br>3,5% transaction fee</p>
+              <p>250 CKU's <br>1 GB Storage<br>3,5% transaction fee</p>
             </div>
             <div class="card-footer text-muted">
               <a href="#" class="btn card-btn card-basic">Try a week</a>
             </div>
           </div>
         </div>
-     
         <div class="col-sm-6">
           <div class="card text-xs-center">
             <div class="card-header card-unlimited">
-              <h1 class="card-title">$499</h1>
-              <h6 class="card-title">per month</h6>
+              <h1 >$499</h1>
+              <h6 >per month</h6>
             </div>
             <div class="card-block card-unlimited-body">
-              <h4 class="card-title font-weight-bold">Unlimited</h4>
-              <p class="card-text">Lots of clients and users</p>
+              <h4 class="font-weight-bold">Unlimited</h4>
+              <p>Lots of clients and users</p>
               <hr class="m-y-2 card-unlimited">
-              <p class="card-text">Unlimited CKU's <br>20 GB Storage<br>3,5% transaction fee</p>
+              <p>Unlimited CKU's <br>20 GB Storage<br>3,5% transaction fee</p>
             </div>
             <div class="card-footer text-muted">
               <a href="#" class="btn card-btn card-unlimited">Try a week</a>
@@ -84,7 +112,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="contact text-xs-center hidden-xs-down">
-          <h2 class="hidden-xs-down" >Want to learn more? Contact Us Today!</h2>
+          <h2 class="hidden-xs-down contact" >Want to learn more? Contact Us Today!</h2>
           <a href="#" class="btn btn-contact">Contact Us</a>
         </div>
       </div>
@@ -96,7 +124,7 @@
 
   <footer>
     <div>
-      <div class="container footer text-xs-center">
+      <div class="container footer text-xs-center list-inline">
         <a href="#" class="footer">CompanyA.com</a> |
         <a href="#" class="footer">Privacy Policy</a> |
         <a href="#" class="footer">Unsubscribe</a>
