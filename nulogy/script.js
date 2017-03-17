@@ -1,87 +1,62 @@
-function mixAndCook(){
-console.log("mixing the ingridients");
- console.log("mpuring the mixture into the frying pan");
- console.log("cooking the first side");
- console.log("flipping it");
- console.log("cooking the other side");
-};
-
-var cheese = "cheddar"
-
-function makeOmelette(){
-
-  var cheese = "swiss"
-  mixAndCook()
-  var omelette=(cheese +" omelette");
-  return omelette;
-}
-console.log (makeOmelette());
-
- 
-
-
-function makePancake(){
-  mixAndCook();
-  var pancake = (cheese + " pancake");
-  return pancake;
-}
-console.log (makePancake());
-
-
-function largestOfFour(arr) {
- 
-  var largestArr=[0,0,0,0];
-
-  
-  for (i=0; i<arr.length;i++){
-    for (y=0; y<arr[i].length;y++){
-      if (arr[i][y]>largestArr[i]) {
-        largestArr[i] = arr[i][y];
-        
-    }
-  }
- }
-
-return largestArr;
-}
-
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
-
-
-
-function output(){
-    var basePrice;
-    var flatMarkupPrice=basePrice*0.05+basePrice;
-    var people;
-    var peopleMarkupPrice=(people*0.012*flatMarkupPrice)+flatMarkupPrice;
-    
-    if 
-    
-}
-
-/*There's a couple ways you could do it. If I may suggest I think the most practical way would be an object with the markups.*/
-        
+/* object with the markups.
 let markup = {
   ...
   food : 0.13
   ...
 }
+https://docs.google.com/document/d/1Fi_WrkQV6xD3zv8Q-uevjdQgO6-puNB3RR40o6_jREs/edit#heading=h.y0x62974vreb
+
+*/
 
 
 
+//* Without exception, there is a flat markup on all jobs of 5%
+//* For each person that needs to work on the job, there is a markup of 1.2%
+//The flat markup is calculated first and then all other markups are calculated on top of the base price plus flat markup.
 
-var Car = function(wheels, seats, engines) {
-  //Change this constructor
-    this.wheels = wheels;
-  this.seats = seats;
-  this.engines = engines;
-};
+function input(basePrice, people, markup){
+    var flatMarkup=basePrice*0.05;
+    var peopleMarkup=people*0.012*(basePrice+flatMarkup);
+ //Markups are also added depending on the types of materials involved:
 
-//Try it out here
-var myCar=new Car(7, 5, 2);
+//* If pharmaceuticals are involved, there is an immediate 7.5% markup
+//* For food, there is a 13% markup
+//* Electronics require a 2% markup
+//* Everything else, there is no markup 
+  /*Example 1:
+----------
+    Input:  $1,299.99, 3 people, food
+    Output: $1,591.58
+
+Example 2:
+----------
+    Input:  $5,432.00, 1 person, drugs
+    Output: $6,199.81
+
+Example 3:
+----------
+    Input:  $12,456.95, 4 people, books
+    Output: $13,707.63*/
+
+  
+  if (markup=="drugs"){
+      outputMarkup=(basePrice+flatMarkup)*0.075+peopleMarkup+flatMarkup+basePrice;
+  }  else if (markup=="food"){
+      outputMarkup=(basePrice+flatMarkup)*0.13+peopleMarkup+flatMarkup+basePrice;
+  } else if(markup=="electronics"){
+      outputMarkup=(basePrice+flatMarkup)*0.02+peopleMarkup+flatMarkup+basePrice;
+  } else {
+     outputMarkup=peopleMarkup+flatMarkup+basePrice;
+  }
+    
+ return outputMarkup; 
+}
+
+
+
     
     
-var output = function(basePrice, people, markup){
+/*var output = function(basePrice, people, markup){
     this.basePrice = basePrice;
     this.people = people;
     this.markup = markup;
@@ -89,3 +64,4 @@ var output = function(basePrice, people, markup){
 }
 
 var myOutput= new output(1,299.99, 3, food);
+*/
