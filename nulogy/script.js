@@ -14,9 +14,15 @@ https://docs.google.com/document/d/1Fi_WrkQV6xD3zv8Q-uevjdQgO6-puNB3RR40o6_jREs/
 //* For each person that needs to work on the job, there is a markup of 1.2%
 //The flat markup is calculated first and then all other markups are calculated on top of the base price plus flat markup.
 
+
+
 function input(basePrice, people, markup){
-    var flatMarkup=basePrice*0.05;
-    var peopleMarkup=people*0.012*(basePrice+flatMarkup);
+
+    var peopleNumber=parseFloat (people);
+    var basePriceNumb=parseFloat(basePrice.replace(/[#$\]\\@,]/g,''));
+    var flatMarkup=basePriceNumb*0.05;
+    var peopleMarkup=peopleNumber*0.012*(basePriceNumb+flatMarkup);
+    
  //Markups are also added depending on the types of materials involved:
 
 //* If pharmaceuticals are involved, there is an immediate 7.5% markup
@@ -40,16 +46,17 @@ Example 3:
 
   
   if (markup=="drugs"){
-      outputMarkup=(basePrice+flatMarkup)*0.075+peopleMarkup+flatMarkup+basePrice;
+      outputMarkup=(basePriceNumb+flatMarkup)*0.075+peopleMarkup+flatMarkup+basePriceNumb;
   }  else if (markup=="food"){
-      outputMarkup=(basePrice+flatMarkup)*0.13+peopleMarkup+flatMarkup+basePrice;
+      outputMarkup=(basePriceNumb+flatMarkup)*0.13+peopleMarkup+flatMarkup+basePriceNumb;
   } else if(markup=="electronics"){
-      outputMarkup=(basePrice+flatMarkup)*0.02+peopleMarkup+flatMarkup+basePrice;
+      outputMarkup=(basePriceNumb+flatMarkup)*0.02+peopleMarkup+flatMarkup+basePriceNumb;
   } else {
-     outputMarkup=peopleMarkup+flatMarkup+basePrice;
+     outputMarkup=peopleMarkup+flatMarkup+basePriceNumb;
   }
-    
-  return Math.round(outputMarkup*100)/100;  
+   // return outputMarkup;
+   return Math.round(outputMarkup*100)/100;
+  //return basePriceNumb;
 }
 
 
