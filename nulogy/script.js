@@ -49,7 +49,7 @@ Example 3:
      outputMarkup=peopleMarkup+flatMarkup+basePrice;
   }
     
- return outputMarkup; 
+  return Math.round(outputMarkup*100)/100;  
 }
 
 
