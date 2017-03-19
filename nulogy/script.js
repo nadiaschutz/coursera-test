@@ -32,20 +32,14 @@ Example 3:
 function input(){
 
     var varInput = prompt("Please enter data", "$1,299.99, 3 people, food");
- 
     var varInput=varInput.replace(',','').replace(/[#$\]\\@]/,'').split(',');
-
 
     var basePrice=parseFloat(varInput[0]);
     var people = parseFloat(varInput[1]);
     var markup = varInput[2].split(" ").join("");
     
-    console.log(basePrice, people, markup);
-  
     var flatMarkup=basePrice*0.05;
     var peopleMarkup=people*0.012*(basePrice+flatMarkup);
-    console.log(flatMarkup);
-
 
     var outputMarkup;
     if (markup=="drugs"){
@@ -58,19 +52,15 @@ function input(){
      outputMarkup=peopleMarkup+flatMarkup+basePrice;
     }
     outputMarkup = Math.round(outputMarkup*100)/100;
-    return outputMarkup;
-    }
+    return outputMarkup.toLocaleString();
+}
 
-    console.log("output: " + "$"+input(), "expected:" + "$1,591.58")
+//console.log("output: " + "$"+input());
+alert("output: " + "$"+input());
 
    
    
    
-
-//console.log(outputMarkup);
-//var output=Math.round(outputMarkup*100)/100;
-//return output;
-//alert ("output:"outputMarkup);
 
 /* object with the markups.
 let markup = {
