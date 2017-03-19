@@ -1,29 +1,13 @@
-/* object with the markups.
-let markup = {
-  ...
-  food : 0.13
-  ...
-}
-https://docs.google.com/document/d/1Fi_WrkQV6xD3zv8Q-uevjdQgO6-puNB3RR40o6_jREs/edit#heading=h.y0x62974vreb
 
+/*   https://docs.google.com/document/d/1Fi_WrkQV6xD3zv8Q-uevjdQgO6-puNB3RR40o6_jREs/edit#heading=h.y0x62974vreb   
 */
-
 
 
 //* Without exception, there is a flat markup on all jobs of 5%
 //* For each person that needs to work on the job, there is a markup of 1.2%
 //The flat markup is calculated first and then all other markups are calculated on top of the base price plus flat markup.
 
-
-
-function input(basePrice, people, markup){
-
-    var peopleNumber=parseFloat (people);
-    var basePriceNumb=parseFloat(basePrice.replace(/[#$\]\\@,]/g,''));
-    var flatMarkup=basePriceNumb*0.05;
-    var peopleMarkup=peopleNumber*0.012*(basePriceNumb+flatMarkup);
-    
- //Markups are also added depending on the types of materials involved:
+//Markups are also added depending on the types of materials involved:
 
 //* If pharmaceuticals are involved, there is an immediate 7.5% markup
 //* For food, there is a 13% markup
@@ -44,24 +28,56 @@ Example 3:
     Input:  $12,456.95, 4 people, books
     Output: $13,707.63*/
 
-  
-  if (markup=="drugs"){
-      outputMarkup=(basePriceNumb+flatMarkup)*0.075+peopleMarkup+flatMarkup+basePriceNumb;
-  }  else if (markup=="food"){
-      outputMarkup=(basePriceNumb+flatMarkup)*0.13+peopleMarkup+flatMarkup+basePriceNumb;
-  } else if(markup=="electronics"){
-      outputMarkup=(basePriceNumb+flatMarkup)*0.02+peopleMarkup+flatMarkup+basePriceNumb;
-  } else {
-     outputMarkup=peopleMarkup+flatMarkup+basePriceNumb;
-  }
-   // return outputMarkup;
-   return Math.round(outputMarkup*100)/100;
-  //return basePriceNumb;
-}
+
+function input(){
+
+    var varInput = prompt("Please enter data", "$1,299.99, 3 people, food");
+ 
+    var varInput=varInput.replace(',','').replace(/[#$\]\\@]/,'').split(',');
 
 
-
+    var basePrice=parseFloat(varInput[0]);
+    var people = parseFloat(varInput[1]);
+    var markup = varInput[2].split(" ").join("");
     
+    console.log(basePrice, people, markup);
+  
+    var flatMarkup=basePrice*0.05;
+    var peopleMarkup=people*0.012*(basePrice+flatMarkup);
+    console.log(flatMarkup);
+
+
+    var outputMarkup;
+    if (markup=="drugs"){
+      outputMarkup=(basePrice+flatMarkup)*0.075+peopleMarkup+flatMarkup+basePrice;
+    }  else if (markup=="food"){
+      outputMarkup=(basePrice+flatMarkup)*0.13+peopleMarkup+flatMarkup+basePrice;
+    } else if(markup=="electronics"){
+      outputMarkup=(basePrice+flatMarkup)*0.02+peopleMarkup+flatMarkup+basePrice;
+    } else {
+     outputMarkup=peopleMarkup+flatMarkup+basePrice;
+    }
+    outputMarkup = Math.round(outputMarkup*100)/100;
+    return outputMarkup;
+    }
+
+    console.log("output: " + "$"+input(), "expected:" + "$1,591.58")
+
+   
+   
+   
+
+//console.log(outputMarkup);
+//var output=Math.round(outputMarkup*100)/100;
+//return output;
+//alert ("output:"outputMarkup);
+
+/* object with the markups.
+let markup = {
+  ...
+  food : 0.13
+  ...
+}
     
 /*var output = function(basePrice, people, markup){
     this.basePrice = basePrice;
