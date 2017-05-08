@@ -19,7 +19,19 @@ $(function () {
         autoplay: true,
         smartSpeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2
+            },
+            768: {
+                items: 3
+            }
+
+        }
     });
 });
 
@@ -49,7 +61,21 @@ $(function () {
         autoplay: true,
         smartSpeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 3
+            },
+            768: {
+                items: 5
+            },
+            992: {
+                items: 6
+            }
+        }
     });
 });
 /*navigation*/
@@ -58,9 +84,29 @@ $(function () {
         if ($(this).scrollTop() < 50) {
             //hide nav
             $("nav").removeClass("vesco-top-nav");
+            $("#back-to-top").fadeOut();
         } else {
             //show nav
             $("nav").addClass("vesco-top-nav");
+            $("#back-to-top").fadeIn();
         }
+    });
+});
+/*smooth scrolling*/
+$(function () {
+    $("a.smooth-scroll").click(function (event) {
+        event.preventDefault();
+        //return id like #about, #work and etc.
+        var section = $(this).attr("href");
+        $('html,body').animate({
+            scrollTop: $(section).offset().top - 64
+        }, 1250, "easeInOutExpo");
+    });
+});
+
+/*to close mobile menu on click*/
+$(function () {
+    $(".navbar-collapse ul li a").on("click touch", function () {
+        $(".navbar-toggle").click();
     });
 });
