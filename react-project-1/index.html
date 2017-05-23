@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="react-container"></div>
+    <script type="text/babel">
+        class MyComponent extends React.Component {
+            render () {
+                return <div>
+                  <h1>Hello World</h1>
+                  <p>this is my fist rect component</p>
+                  </div>
+            }
+        }
+        
+        
+        ReactDOM.render(<MyComponent />, 
+        document.getElementById('react-container'))
+
+    </script>
+</body>
+</html>
