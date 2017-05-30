@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!--font awesome-->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
@@ -30,10 +33,10 @@
 
                     <a class="burger-nav"></a>
                     <ul class="nav">
-                        <li><a href="#features" >product</a></li>
-                        <li><a href="#about-company" >company</a></li>
-                        <li><a href="#partners" >partners</a></li>
-                        <li><a href="#media" >media</a></li>
+                        <li><a href="#features">product</a></li>
+                        <li><a href="#about-company">company</a></li>
+                        <li><a href="#partners">partners</a></li>
+                        <li><a href="#media">media</a></li>
                         <li><a href="#say-hello">schedule demo</a></li>
                     </ul>
 
@@ -41,8 +44,20 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>HELP YOUR CUSTOMERS <br>QUICKLY AND SELL BETTER</h1>
-            <p class="i">Answer questions fast and converse proactively <br>with customer using automated live chat</p>
+            <div class="owl-carousel owl-theme" id="home-slider">
+                <div class="h1-home">
+                    <h1>HELP YOUR CUSTOMERS <br>QUICKLY AND SELL BETTER</h1>
+                    <p class="i">Answer questions fast and converse proactively <br>with customer using automated live chat</p>
+                </div>
+                <div class="h1-home">
+                    <h1>Delight users with<br>your customer support </h1>
+                    <p class="i">Integrate our intelligent digital agent(IDA) into your help desk to<br>reduce your tier one support costs and improve efficiencies</p>
+                </div>
+                <div class="h1-home">
+                    <h1>Revolutionize your onboarding<br>&amp; retention user experience</h1>
+                    <p class="i">Eliminate the need for forms, Apps and frustrating user experience <br> sites with innovative conversational UX</p>
+                </div>
+            </div>
             <a class="btn btn-main smooth-scroll-1" href="#say-hello">SCHEDULE DEMO</a>
         </div>
     </header>
@@ -85,8 +100,28 @@
 
     </section>
 
-    <section id="features-demo">
-        <div class="container-features">
+    <section id="features-demo" class="owl-carousel owl-theme">
+        <div class="container-features ">
+            <div class="row">
+                <div class="col span-1-of-2 features-box"></div>
+                <div class="col span-1-of-2 features-box">
+
+                    <img class="features-bot" src="img/home_slideshow_food_ordering_chat.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="container-features ">
+            <div class="row">
+                <div class="col span-1-of-2 features-box"></div>
+                <div class="col span-1-of-2 features-box">
+
+                    <img class="features-bot" src="img/home_slideshow_food_ordering_chat.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="container-features ">
             <div class="row">
                 <div class="col span-1-of-2 features-box"></div>
                 <div class="col span-1-of-2 features-box">
@@ -415,6 +450,7 @@
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 

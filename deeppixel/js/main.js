@@ -98,6 +98,30 @@ $(window).scroll(function(){
 		offset: '50%'
 	});
     
+    
+    /*h1-home*/
+$(function () {
+    $("#home-slider").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        
+    });
+});
+    /*product-bot-slider*/
+    $(function () {
+    $("#features-demo").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true,
+        
+    });
+});
+    
    
     
     

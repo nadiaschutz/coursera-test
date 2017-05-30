@@ -239,7 +239,13 @@ header {
 }
 
 .hero-text-box p {
+    padding-bottom: 10px;
+}
+
+#home-slider .owl-dots{
+    text-align: left;
     padding-bottom: 30px;
+    
 }
 
 
