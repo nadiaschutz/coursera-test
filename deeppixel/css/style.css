@@ -32,7 +32,8 @@ html {
     background-color: #fff;
     font-size: 20px;
     font-weight: 300;
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    
 }
 
 .row {
@@ -218,6 +219,19 @@ input[type=submit]:active {
 }
 .nav li.active a {
     color: #e74c3c;
+}
+
+/*mobile navigation*/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: red;
 }
 
 /*home*/
@@ -768,6 +782,33 @@ textarea::placeholder {
         text-align: center;
         margin: 0 auto;
         float: none;
+    }
+    /*mobile nav*/
+    
+    .mobile-nav-icon{
+        display: inline-block;
+    }
+    
+    .nav{
+        display: none;
+    }
+    .nav{
+        float: left;
+        margin-top: 0px;
+        margin-left: 25px;
+        
+    }
+    .nav li{
+        display: block;
+        padding: 5px;
+    }
+    
+    
+    .nav li a:link,
+    .nav li a:visited{
+        display: block;
+        padding: 12px 0 0 0;
+        font-size: 15px;
     }
 }
 
