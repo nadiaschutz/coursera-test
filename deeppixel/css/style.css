@@ -33,7 +33,6 @@ html {
     font-size: 20px;
     font-weight: 300;
     text-rendering: geometricPrecision;
-    
 }
 
 .row {
@@ -114,6 +113,18 @@ i {
     font-style: italic;
 }
 
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /*buttons*/
 
@@ -162,7 +173,8 @@ input[type=submit] {
     font-weight: 700;
     text-decoration: none;
     width: 100%;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 input[type=submit]:hover,
@@ -214,25 +226,29 @@ input[type=submit]:active {
     transition: 0.2s, color 0.2s;
 }
 
-.nav li a:hover{
+.nav li a:hover {
     color: #e74c3c;
 }
+
 .nav li.active a {
     color: #e74c3c;
 }
 
+
 /*mobile navigation*/
 
-.mobile-nav-icon{
+.mobile-nav-icon {
     float: right;
     margin-top: 10px;
     cursor: pointer;
     display: none;
 }
+
 .mobile-nav-icon i {
     font-size: 200%;
     color: red;
 }
+
 
 /*home*/
 
@@ -256,10 +272,9 @@ header {
     padding-bottom: 10px;
 }
 
-#home-slider .owl-dots{
+#home-slider .owl-dots {
     text-align: left;
     padding-bottom: 30px;
-    
 }
 
 
@@ -276,6 +291,55 @@ header {
     margin-top: 30px;
 }
 
+
+/*#demo-video{
+    position: relative;
+}*/
+
+.phone-wrap-box {
+    display: block;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.phone-wrap {
+    display: block;
+    position: relative;
+    height: auto;
+}
+
+.app-screen {
+    display: block;
+    position: absolute;
+    width: 500px;
+    top: 0;
+    right: 0;
+}
+
+.video-wrap {
+    display: block;
+    position: absolute;
+    top: 115px;
+    right: 99px;
+    width: 318px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.features-box {
+    width: 50%;
+    display: block;
+    float: right;
+  
+}
+.feature-box li{
+    
+}
+
 .features-box:first-child {
     text-align: right;
     padding-right: 10px;
@@ -288,13 +352,10 @@ header {
     margin-top: 120px;
 }
 
-.app-screen {
-    width: 450px;
-}
-
 .works-step {
     margin-bottom: 50px;
     width: 85%;
+    list-style: none;
 }
 
 .works-step i {
@@ -442,6 +503,7 @@ header {
 .media-box-content a {
     text-decoration: none;
 }
+
 .media-box-content a p:hover {
     color: #e74c3c;
     -webkit-transition: 0.2s, color 0.2s;
@@ -585,14 +647,12 @@ textarea::placeholder {
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
-    
 }
 
 #footer-menu a:hover {
     color: #e74c3c;
     -webkit-transition: 0.2s, color 0.2s;
     transition: 0.2s, color 0.2s;
-    
 }
 
 
@@ -657,9 +717,26 @@ textarea::placeholder {
     h4 {
         font-size: 13px;
     }
+    
+    
+    
     .app-screen {
-        max-width: 100%;
+        display: block;
+        position: absolute;
+        width: 400px;
+        top: 0;
+        right: 0;
     }
+    .video-wrap {
+        display: block;
+        position: absolute;
+        top: 92px;
+        right: 79px;
+        width: 255px;
+    }
+    
+    
+    
     .works-step i {
         margin-right: 5px;
         margin-bottom: 50px
@@ -784,28 +861,23 @@ textarea::placeholder {
         float: none;
     }
     /*mobile nav*/
-    
-    .mobile-nav-icon{
+    .mobile-nav-icon {
         display: inline-block;
     }
-    
-    .nav{
+    .nav {
         display: none;
     }
-    .nav{
+    .nav {
         float: left;
         margin-top: 0px;
         margin-left: 25px;
-        
     }
-    .nav li{
+    .nav li {
         display: block;
         padding: 5px;
     }
-    
-    
     .nav li a:link,
-    .nav li a:visited{
+    .nav li a:visited {
         display: block;
         padding: 12px 0 0 0;
         font-size: 15px;
