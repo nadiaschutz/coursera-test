@@ -81,24 +81,40 @@ $(document).ready(function () {
         offset: '50%'
     });
 
-});
-
-/*mobile nav*/
-
-$('.js-nav-icon').click(function () {
-    var nav = $('.js-main-nav');
-    var icon = $('.js-nav-icon i');
-    nav.slideToggle(200);
-    if (icon.hasClass('ion-navicon-round')) {
-        icon.addClass('ion-close-round');
-        icon.removeClass('ion-navicon-round');
-    } else {
-        icon.addClass('ion-navicon-round');
-        icon.removeClass('ion-close-round');
-    }
 
 
-});
+    /*mobile nav*/
+
+    $('.js-nav-icon').click(function () {
+        var nav = $('.js-main-nav');
+        var icon = $('.js-nav-icon i');
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.removeClass('ion-navicon-round');
+            icon.addClass('ion-close-round');
+        } else {
+            icon.removeClass('ion-close-round');
+            icon.addClass('ion-navicon-round');
+        }
+    });
+
+    /*maps*/
+
+    var map = new GMaps({
+        div: '.map',
+        lat: 43.66915,
+        lng: -79.3,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 43.66915,
+        lng: -79.4146586,
+        title: 'Toronto',
+        infoWindow: {
+            content: '<p>We serve Toronto and GTA</p>'
+        }
+    });
 
 
 });

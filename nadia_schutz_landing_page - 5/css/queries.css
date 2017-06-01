@@ -49,7 +49,7 @@
         font-size: 250%;
     }
     .contact-form {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -141,6 +141,24 @@
     }
     .works-step:last-of-type {
         margin-bottom: 20px;
+    }
+    
+    .map-box{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .map{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+    .form-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
     }
 }
 
