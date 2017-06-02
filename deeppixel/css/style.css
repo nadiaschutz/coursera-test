@@ -113,9 +113,12 @@ i {
     font-style: italic;
 }
 
+
 /*.clearfix {
     *zoom: 1;
 }*/
+
+
 /*
 .clearfix:before,
 .clearfix:after {
@@ -128,21 +131,33 @@ i {
 */
 
 .clearfix:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
     visibility: hidden;
 }
 
-.clearfix {display: inline-block;}
+.clearfix {
+    display: inline-block;
+}
+
 
 /* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-/* End hide from IE-mac */
-/* @end */
 
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+
+/* End hide from IE-mac */
+
+
+/* @end */
 
 
 /*buttons*/
@@ -317,7 +332,6 @@ header {
 
 .phone-wrap-box {
     display: block;
-    width: 50%;
     height: auto;
     float: left;
     background-color: aquamarine;
@@ -354,13 +368,8 @@ header {
 }
 
 .features-box {
-    width: 50%;
     display: block;
     float: right;
-  
-}
-.feature-box li{
-    
 }
 
 .features-box:first-child {
@@ -373,6 +382,7 @@ header {
     text-align: left;
     padding-left: 10px;
     margin-top: 120px;
+    margin-bottom: 90px;
 }
 
 .works-step {
@@ -697,18 +707,7 @@ textarea::placeholder {
     .row {
         padding: 0 2%;
     }
-    .features-box {
-        padding-left: 0;
-    }
-    .features-box:last-child {
-        padding-left: 0;
-    }
-    .works-step {
-        width: 100%;
-    }
-    .features-box p {
-        width: 100%;
-    }
+
     .benefit span {
         margin: 15px 0 70px 0;
     }
@@ -740,9 +739,6 @@ textarea::placeholder {
     h4 {
         font-size: 13px;
     }
-    
-    
-    
     .app-screen {
         display: block;
         position: absolute;
@@ -757,9 +753,6 @@ textarea::placeholder {
         right: 79px;
         width: 255px;
     }
-    
-    
-    
     .works-step i {
         margin-right: 5px;
         margin-bottom: 50px
@@ -767,6 +760,28 @@ textarea::placeholder {
     .features-box:last-child {
         margin-top: 30px;
     }
+    
+        .features-box {
+        padding-left: 0;
+    }
+    .features-box ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .features-box:last-child {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .works-step {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .features-box p {
+        width: 100%;
+    }
+    
+    
+    
     .features-bot {
         width: 100%
     }
@@ -781,7 +796,6 @@ textarea::placeholder {
     .benefit p {
         text-align: justify;
         margin-left: 40px;
-        margin-left: 40px;
     }
     .benefit span i {
         -webkit-transform: scale(0.7, 0.7);
@@ -793,6 +807,11 @@ textarea::placeholder {
         margin: 0 0;
         height: auto;
     }
+    .tech-detail p {
+        text-align: justify;
+        margin-left: 40px;
+    }
+    
     .tech-detail span {
         margin-bottom: 0;
     }
@@ -826,10 +845,31 @@ textarea::placeholder {
     .hero-text-box {
         text-align: center;
     }
+    #home-slider .owl-dots{
+        text-align: center;
+    }
+    
     p,
     h3 {
         font-size: 16px;
         line-height: 24px;
+    }
+    .phone-wrap-box {
+        height: 500px;
+        text-align: center;
+    }
+    .phone-wrap{
+        left: -6%;
+    }
+    .app-screen {
+        width: 300px;
+        
+       
+    }
+    .video-wrap{
+        top: 69px;
+        right: 0;
+        width: 191px;
     }
     .features-box {
         width: 100%;
@@ -840,6 +880,19 @@ textarea::placeholder {
         text-align: center;
         padding-right: 0;
     }
+    
+
+   
+    .works-step {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .works-step i {
+        margin-bottom: 0px;
+    
+    }
+    
+    
     .features-bot {
         width: 70%;
     }
@@ -853,10 +906,25 @@ textarea::placeholder {
     .span-1-of-2 {
         width: 100%;
         padding-left: 0;
-        margin-left: 0;
+        margin: 0 auto;
     }
+    .benefit p,
+    .tech-detail p{
+        width: 70%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
     .span-1-of-2:last-child {
         margin-left: 0;
+    }
+    
+    #about-company h2{
+        text-align: center;
+    }
+    #about-company .content-title-underline{
+        margin-left: auto;
     }
     .media-box-content {
         margin-left: 0;

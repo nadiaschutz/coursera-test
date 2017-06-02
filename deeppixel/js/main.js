@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
 
     // Set the container height
-    $(".container").height(biggestHeight);
+    $(".cbox").height(biggestHeight);
 
 
 
