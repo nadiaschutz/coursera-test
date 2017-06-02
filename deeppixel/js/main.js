@@ -8,6 +8,21 @@ $(document).ready(function () {
         $(".container nav ul").toggleClass("open");
 
     });
+    
+    /*set parent container to the height of the child*/
+
+    var biggestHeight = 0;
+    // Loop through elements children to find & set the biggest height
+    $(".cbox *").each(function () {
+        // If this elements height is bigger than the biggestHeight
+        if ($(this).height() > biggestHeight) {
+            // Set the biggestHeight to this Height
+            biggestHeight = $(this).height();
+        }
+    });
+
+    // Set the container height
+    $(".container").height(biggestHeight);
 
 
 
@@ -131,17 +146,17 @@ $(document).ready(function () {
     /*mobile nav*/
 
     $('.js-nav-icon').click(function () {
-    var nav = $('.js-main-nav');
-    var icon = $('.js-nav-icon i');
-    nav.slideToggle(200);
-    if (icon.hasClass('fa fa-bars')) {
-        icon.removeClass('fa fa-bars');
-        icon.addClass('fa fa-times');
-        
-    } else {
-        icon.removeClass('fa fa-times');
-        icon.addClass('fa fa-bars');
-    }
+        var nav = $('.js-main-nav');
+        var icon = $('.js-nav-icon i');
+        nav.slideToggle(200);
+        if (icon.hasClass('fa fa-bars')) {
+            icon.removeClass('fa fa-bars');
+            icon.addClass('fa fa-times');
+
+        } else {
+            icon.removeClass('fa fa-times');
+            icon.addClass('fa fa-bars');
+        }
 
     });
     /*  <i class="fa fa-bars" aria-hidden="true"></i>

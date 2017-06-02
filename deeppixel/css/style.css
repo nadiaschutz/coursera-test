@@ -113,17 +113,36 @@ i {
     font-style: italic;
 }
 
-.clearfix {
-    zoom: 1
+/*.clearfix {
+    *zoom: 1;
+}*/
+/*
+.clearfix:before,
+.clearfix:after {
+    content: ' ';
+    display: block;
 }
+.clearfix:after{
+    clear: both;
+}
+*/
 
 .clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
     visibility: hidden;
 }
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */
+
 
 
 /*buttons*/
@@ -301,12 +320,14 @@ header {
     width: 50%;
     height: auto;
     float: left;
+    background-color: aquamarine;
 }
 
 .phone-wrap {
     display: block;
     position: relative;
     height: auto;
+    background-color: yellow;
 }
 
 .app-screen {
@@ -315,6 +336,7 @@ header {
     width: 500px;
     top: 0;
     right: 0;
+    overflow: hidden
 }
 
 .video-wrap {
@@ -328,6 +350,7 @@ header {
 .video {
     width: 100%;
     height: auto;
+    overflow: hidden
 }
 
 .features-box {
