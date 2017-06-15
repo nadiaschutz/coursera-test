@@ -37,7 +37,7 @@ let lineChart3 = new Chart(CHART3, {
     data: {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
         datasets: [{
-            label: 'Numbers of Unique Users',
+            label: 'Number of Unique Users',
             data: [12, 19, 3, 17, 6, 3, 7],
             backgroundColor: "rgba(243, 156, 18, 0.6)"
     }]
