@@ -86,10 +86,11 @@ h4 {
     font-size: 16px;
     font-weight: 300;
     font-family: 'Roboto Condensed', sans-serif;
-    color: #e74c3c;
+    color: #666666;
     letter-spacing: 1px;
     line-height: 30px;
-    text-transform: uppercase;
+    margin-top: 15px;
+   
 }
 
 p {
@@ -198,6 +199,7 @@ i {
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    text-align: center;
 }
 
 
