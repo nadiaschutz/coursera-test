@@ -1,4 +1,4 @@
-var theUrl = "http://pcbbot-staging.mybluemix.net/statistics";
+/*var theUrl = "http://pcbbot-staging.mybluemix.net/statistics";*/
 
 
 //show a arr of a the last  7 week days like this [6, 0, 1, 2, 3, 4, 5](the last day is today, which is friday)
