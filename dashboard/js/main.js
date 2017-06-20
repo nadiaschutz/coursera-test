@@ -135,7 +135,7 @@ document.getElementById('lineChart3-total').textContent = "Total: " + chartDataT
 
 //chart 4
 var chartData4, chartDataTotal4;
-var chartLabels4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+var chartLabels4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 var CHART4 = document.getElementById("lineChart4");
 var lineChart4 = new Chart(CHART4, {
 
