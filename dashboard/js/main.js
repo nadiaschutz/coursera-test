@@ -157,8 +157,8 @@ function myCallback(link) {
     //chart1
     chartDataQ1 = link.data.statistics.unique.weekly;
     chartDataTotalQ1 = link.data.statistics.unique.total;
-    chartDataA1 = link.data.statistics.feedback.weekly;
-    chartDataTotalA1 = link.data.statistics.feedback.total;
+    chartDataA1 = link.data.statistics.matched.weekly;
+    chartDataTotalA1 = link.data.statistics.matched.total;
 
     //chart2
     chartData2 = link.data.statistics.agent.weekly;
