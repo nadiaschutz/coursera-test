@@ -28,11 +28,13 @@ font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     font-size: 20px;
-    font-weight: 300;
-    text-rendering: geometricPrecision;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
 }
 
 .row {
@@ -49,7 +51,7 @@ html {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 240%;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
@@ -57,11 +59,10 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 4px;
     letter-spacing: 3px;
-    line-height: 75px;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 180%;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
@@ -72,7 +73,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 110%;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     color: #24201F;
@@ -83,7 +84,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 300;
     font-family: 'Roboto Condensed', sans-serif;
     color: #e74c3c;
@@ -93,13 +94,12 @@ h4 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 100%;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     color: #24201F;
     font-style: italic;
     letter-spacing: 1px;
-    line-height: 30px;
     margin-bottom: 30px;
 }
 
@@ -111,6 +111,10 @@ b {
 em,
 i {
     font-style: italic;
+}
+
+.width-70 {
+    width: 70%;
 }
 
 
@@ -171,7 +175,7 @@ i {
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 80%;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
@@ -198,7 +202,7 @@ input[type=submit] {
     color: #fff;
     background-color: transparent;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 80%;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
     display: inline-block;
@@ -224,7 +228,7 @@ input[type=submit]:active {
     width: 100%;
     position: fixed;
     /* Set the navbar to fixed position */
-    border-bottom: #bdc3c7 1px dotted;
+    border-bottom: #eeeeee 1px solid;
     background-color: white;
     /*height: 100px;*/
     z-index: 1000;
@@ -252,7 +256,7 @@ input[type=submit]:active {
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 30px;
-    font-size: 16px;
+    font-size: 80%;
     font-weight: 700;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
@@ -286,7 +290,7 @@ input[type=submit]:active {
 
 /*home*/
 
-header {
+#header-index {
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba( 255, 255, 255, 0.6)), url(../img/home2.png);
     height: 100vh;
     background-size: cover;
@@ -294,6 +298,7 @@ header {
 }
 
 .hero-text-box {
+    padding-top: 70px;
     position: absolute;
     width: 1140px;
     top: 50%;
@@ -404,6 +409,7 @@ header {
 
 /*features-demo*/
 
+
 /*#features-demo {
     background-image: url(../img/girl_on_phone_with_coffee.jpg);
     background-size: cover;
@@ -417,24 +423,28 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .container-features-2 {
     background-image: url(../img/bank.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .container-features-3 {
     background-image: url(../img/shopping%201.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .container-features-4 {
     background-image: url(../img/office.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .container-features-5 {
     background-image: url(../img/shopping-in-store.jpg);
     background-size: cover;
@@ -442,24 +452,26 @@ header {
     background-repeat: no-repeat;
 }
 
-.owl-carousel .owl-item img{
-    height: 705px;
+.owl-carousel .owl-item img {
+    height: 650px;
     width: auto;
 }
 
 .features-bot {
-    
-    height: 705px;
+    height: 650px;
     width: auto;
 }
-.right{
+
+.right {
     float: right;
 }
-.left{
+
+.left {
     float: left;
 }
-.center{
-   margin: 0 auto;
+
+.center {
+    margin: 0 auto;
 }
 
 
@@ -515,25 +527,6 @@ header {
 
 .tech-detail span {
     margin-bottom: 30px;
-}
-
-
-/*about company*/
-
-#about-company h2 {
-    text-align: left;
-}
-
-#about-company .content-title-underline {
-    margin-left: 0;
-}
-
-#about-company p {
-    text-align: justify;
-}
-
-#about-company img {
-    width: 100%;
 }
 
 
@@ -609,7 +602,7 @@ header {
 }
 
 #say-hello h5 {
-    font-size: 20px;
+    font-size: 100%;
     font-weight: 700;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
@@ -629,7 +622,7 @@ header {
 }
 
 .social-icon i {
-    font-size: 17px;
+    font-size: 85%;
 }
 
 .social-icon i:hover {
@@ -652,7 +645,7 @@ form .form-control {
     background: transparent;
     border-radius: 0;
     border: #fff 2px solid;
-    font-size: 17px;
+    font-size: 85%;
     font-weight: 300;
     padding: 10px 100px 10px 10px;
     margin-bottom: 10px;
@@ -684,6 +677,41 @@ textarea::placeholder {
 }
 
 
+/* company page*/
+
+
+/*company-about*/
+
+#company-about {
+    background-color: #fafafa;
+}
+
+#company-about h3 {
+    margin-top: 100px;
+}
+
+#company-about h2 {
+    text-align: left;
+}
+
+#company-about .content-title-underline {
+    margin-left: 0;
+}
+
+#company-about p {
+    text-align: justify;
+}
+
+
+/*company-leadership*/
+
+.leadership-company-box img {
+    float: left;
+    max-width: 165px;
+    border-radius: 50%;
+}
+
+
 /*footer*/
 
 #footer-bottom {
@@ -694,13 +722,13 @@ textarea::placeholder {
     margin: 0;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 80%;
 }
 
 #footer-menu {
     float: right;
     color: #fff;
-    font-size: 16px;
+    font-size: 80%;
     font-weight: 700;
     line-height: 30px;
 }
@@ -717,7 +745,7 @@ textarea::placeholder {
 
 #footer-menu a {
     color: #fff;
-    font-size: 16px;
+    font-size: 80%;
     font-weight: 700;
     margin: 0 10px;
     text-decoration: none;
@@ -736,14 +764,6 @@ textarea::placeholder {
 /*responsive*/
 
 @media only screen and (max-width: 1200px) {
-    p,
-    h3 {
-        font-size: 18px;
-        line-height: 27px;
-    }
-    h2 {
-        font-size: 32px;
-    }
     .hero-text-box {
         width: 100%;
         padding: 0 2%;
@@ -751,37 +771,29 @@ textarea::placeholder {
     .row {
         padding: 0 2%;
     }
-
     .benefit span {
         margin: 15px 0 70px 0;
     }
     .partners-box li {
         height: 70px;
     }
-    #footer-copyrights p {
-        font-size: 13px;
-    }
+    #footer-copyrights p,
     #footer-menu a {
-        font-size: 13px;
+        font-size: 65%;
     }
 }
 
 @media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
     .logo {
         height: 25px;
         margin-top: 15px;
     }
     .nav li a {
         margin-left: 10px;
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 40px;
-        letter-spacing: 1.5x;
-        line-height: 60px;
-    }
-    h4 {
-        font-size: 13px;
+        font-size: 70%;
     }
     .app-screen {
         display: block;
@@ -804,8 +816,7 @@ textarea::placeholder {
     .features-box:last-child {
         margin-top: 30px;
     }
-    
-        .features-box {
+    .features-box {
         padding-left: 0;
     }
     .features-box ul {
@@ -823,9 +834,6 @@ textarea::placeholder {
     .features-box p {
         width: 100%;
     }
-    
-    
-    
     .features-bot {
         width: 100%
     }
@@ -855,7 +863,6 @@ textarea::placeholder {
         text-align: justify;
         margin-left: 40px;
     }
-    
     .tech-detail span {
         margin-bottom: 0;
     }
@@ -870,7 +877,7 @@ textarea::placeholder {
         width: 100%;
     }
     #footer-menu a {
-        font-size: 11px;
+        font-size: 55%;
         margin: 0 3px;
         line-height: 16px;
     }
@@ -883,43 +890,46 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
     nav li a {
         display: none;
     }
     .hero-text-box {
         text-align: center;
     }
-    #home-slider .owl-dots{
+    #home-slider .owl-dots {
         text-align: center;
-    }
-    
-    p,
-    h3 {
-        font-size: 16px;
-        line-height: 24px;
     }
     .phone-wrap-box {
         height: 500px;
         display: flex;
     }
-    .phone-wrap{
+    .phone-wrap {
         left: 0;
         height: 500px;
         width: 300px;
     }
-    .flex-box1{
-      width: auto;
+    .flex-box1 {
+        width: auto;
         order: -1;
         flex-grow: 1;
     }
-    .flex-box2{
+    .flex-box2 {
         width: auto;
         flex-grow: 1;
     }
     .app-screen {
         width: 300px;
     }
-    .video-wrap{
+    .video-wrap {
         top: 69px;
         right: 60px;
         width: 190px;
@@ -934,19 +944,13 @@ textarea::placeholder {
         text-align: center;
         padding-right: 0;
     }
-    
-
-   
     .works-step {
         width: 80%;
         margin: 0 auto;
     }
     .works-step i {
         margin-bottom: 43px;
-    
     }
-    
-    
     .features-bot {
         width: 70%;
     }
@@ -963,22 +967,20 @@ textarea::placeholder {
         margin: 0 auto;
     }
     .benefit p,
-    .tech-detail p{
+    .tech-detail p {
         width: 70%;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
     }
-    
     .span-1-of-2:last-child {
         margin-left: 0;
     }
-    
     #about-company h2,
-    #about-company h3{
+    #about-company h3 {
         text-align: center;
     }
-    #about-company .content-title-underline{
+    #about-company .content-title-underline {
         margin-left: auto;
     }
     .media-box-content {
@@ -1026,11 +1028,68 @@ textarea::placeholder {
     .nav li a:visited {
         display: block;
         padding: 12px 0 0 0;
-        font-size: 15px;
+        font-size: 75%;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 736px) {
+    body {
+        font-size: 14px;
+    }
+    .hero-text-box p {
+        font-size: 90%;
+        line-height: 18px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .h1-home {
+        max-width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 619px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 140%;
+    }
+    h2 {
+        font-size: 130%;
+    }
+    .hero-text-box p {
+        font-size: 80%;
+        line-height: 18px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .owl-carousel .owl-item img {
+        height: 500px;
+        width: auto;
+    }
+    .features-bot {
+        height: 500px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    body {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .hero-text-box {
+        margin-top: 20px;
+    }
+    #home-slider .owl-dots {
+        padding-bottom: 0;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0;
+    }
     .contact-box {
         margin-bottom: 50px;
     }
@@ -1040,6 +1099,13 @@ textarea::placeholder {
     .partners-box li:nth-child(2) {
         -webkit-transform: scale(0.7, 0.7);
         transform: scale(0.7, 0.7);
+    }
+    .hero-text-box p {
+        font-size: 90%;
+        line-height: 18px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        letter-spacing: 0;
     }
     /*.partners-box:nth-child(2) {
         width: auto;
