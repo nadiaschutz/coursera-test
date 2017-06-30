@@ -864,8 +864,9 @@ textarea::placeholder {
 
 .leadership-company-box img {
     float: left;
-    max-width: 165px;
+    max-width: 126px;
     border-radius: 50%;
+    /*box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .48);*/
 }
 
 .leadership-company-box h3 {
