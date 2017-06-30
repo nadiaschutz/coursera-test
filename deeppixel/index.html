@@ -31,42 +31,49 @@
 </head>
 
 <body>
+    <nav id="container-home">
+        <div class="row">
+
+
+
+
+            <a href="#home"><img src="img/deepPixel%20logo%20smooth.png" class="logo"></a>
+
+
+
+            <ul class="nav js-main-nav">
+                <li><a href="index.html#features">product</a></li>
+                <li><a href="index.html#partners">partners</a></li>
+                <li><a href="index.html#media">media</a></li>
+                <li><a href="index.html#say-hello">schedule demo</a></li>
+                <li><a href="company.html">company</a>
+                    <ul>
+                        <li><a href="company.html#company-about">about</a></li>
+                        <li><a href="company.html#leadership">leadership</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a class="mobile-nav-icon js-nav-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+    </nav>
 
     <header id="home">
-        <nav>
-            <div id="container-home">
-                <div class="row ">
-                    <a href="#home"><img src="img/deepPixel%20logo%20smooth.png" class="logo"></a>
-
-
-                    <ul class="nav js-main-nav">
-                        <li><a href="#features">product</a></li>
-                        <li><a href="#partners">partners</a></li>
-                        <li><a href="#media">media</a></li>
-                        <li><a href="#say-hello">schedule demo</a></li>
-                        <li><a href="company.html">company</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js-nav-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-                </div>
-            </div>
-        </nav>
-
         <div id="header-index">
 
 
             <div class="hero-text-box">
                 <div class="owl-carousel owl-theme" id="home-slider">
                     <div class="h1-home">
-                        <h1>HELP YOUR CUSTOMERS <br>QUICKLY AND SELL BETTER</h1>
+                        <h1 class="width-70">HELP YOUR CUSTOMERS QUICKLY AND SELL BETTER</h1>
                         <p class="i">Answer questions fast and converse proactively with customers using automated live chat</p>
                     </div>
                     <div class="h1-home">
-                        <h1>Delight users with your customer support </h1>
+                        <h1 class="width-70">Delight users with your customer support </h1>
                         <p class="i">Integrate our intelligent digital agent(IDA) into your help desk to reduce your tier one support costs and improve efficiencies</p>
                     </div>
                     <div class="h1-home">
-                        <h1>Revolutionize your onboarding<br>&amp; retention user experience</h1>
+                        <h1 class="width-70">Revolutionize your onboarding<br>&amp; retention user experience</h1>
                         <p class="i">Eliminate the need for forms, Apps and frustrating user experience sites with innovative conversational UX</p>
                     </div>
                 </div>
@@ -368,60 +375,25 @@
     </section>
 
 
-    <footer>
-        <section id="say-hello">
-            <div class="container">
 
-                <h2>say hello</h2>
-                <div class="content-title-underline"></div>
-                <div class="row">
-                    <div class="col span-1-of-3 contact-box">
-                        <div class="hello-box-content">
-                            <h5>DeepPiXEL</h5>
-                            <p>Let's take the conversation to a higher level</p>
-                            <h5>Contacts</h5>
+    <section id="say-hello">
+        <div class="container">
 
-                            <address>
-                                <p>185 Spadina Ave<br> Toronto, On M5T 2C6<br></p> 
-                            </address>
+            <h2>say hello</h2>
+            <div class="content-title-underline"></div>
+            <div class="row">
 
-                            <p>866-341-5575<br> 647-749-9010 <br> 647-792-7038 (fax)<br>info@deeppixel.ai </p>
+                <div class="col span-1-of-6 ">
 
-                        </div>
-                        <ul class="social-list">
-                            <li>
-                                <a href="https://www.facebook.com/deeppixel.inc/" class="social-icon icon-white" target="_blank">
-                                    <i class=" fa fa-facebook "></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/deeppixel_ai" class="social-icon icon-white ">
-                                    <i class="fa fa-twitter" target="_blank"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://plus.google.com/100129222746148170843" class="social-icon icon-white" target="_blank">
-                                    <i class="fa fa-google-plus "></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company-beta/10527479/" class="social-icon icon-white" target="_blank">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="col span-4-of-6 message-box-content ">
+                    <div class="container-message ">
+                        <form method="post " action="https://formspree.io/info@deeppixel.ai " class="contact-form ">
 
 
+                            <div class="row ">
 
-                    <div class="col span-2-of-3 message-box-content ">
-                        <div class="container-message ">
-                            <form method="post " action="https://formspree.io/info@deeppixel.ai " class="contact-form ">
-
-
-                                <div class="row ">
-
-                                    <!--<?php
+                                <!--<?php
                         
                                     if($_GET['success'] == 1){
                                         echo "<div class="form-messages success">Thank you! Your message has been sent.</div>" } if($_GET['success'] == -1){ echo "
@@ -429,69 +401,110 @@
                         oops! Something went wrong.
                     </div>" } ?>-->
 
+                            </div>
+
+                            <div class="row">
+
+
+
+                                <div class="col span-1-of-2">
+                                    <input type="text" name="name" id="name" placeholder="Your Name" required class="form-control">
                                 </div>
 
-                                <div class="row">
 
-
-                                    <div class="col span-1-of-2">
-                                        <input type="text" name="name" id="name" placeholder="Your Name" required class="form-control">
-                                    </div>
-
-
-                                    <div class="col span-1-of-2">
-                                        <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
-                                    </div>
+                                <div class="col span-1-of-2">
+                                    <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
                                 </div>
-                                <div class="row">
+                            </div>
+                            <div class="row">
 
-                                    <div class="col span-2-of-2">
-                                        <textarea name="message" placeholder="Your message" class="form-control message"></textarea>
-                                    </div>
+                                <div class="col span-2-of-2">
+                                    <textarea name="message" placeholder="Your message" class="form-control message"></textarea>
                                 </div>
-                                <div class="row">
-                                    <div class="col span-2-of-2">
-                                        <input type="submit" value="Send it!">
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col span-2-of-2">
+                                    <input type="submit" value="Send it!">
                                 </div>
+                            </div>
 
-                            </form>
-                        </div>
-
-
-
+                        </form>
                     </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+
+
+        <div class="row">
+            <div class="col span-1-of-3 contact-box">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.facebook.com/deeppixel.inc/" class="social-icon icon-white" target="_blank">
+                            <i class=" fa fa-facebook "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/deeppixel_ai" class="social-icon icon-white ">
+                            <i class="fa fa-twitter" target="_blank"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/100129222746148170843" class="social-icon icon-white" target="_blank">
+                            <i class="fa fa-google-plus "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company-beta/10527479/" class="social-icon icon-white" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col span-1-of-3 contact-box">
+                <div class="hello-box-content">
+
+                    <address>
+                                <p>185 Spadina Ave<br> Toronto, On M5T 2C6<br></p> 
+                            </address>
+
+                    <p>866-341-5575<br> 647-749-9010 <br> 647-792-7038 (fax)<br>info@deeppixel.ai </p>
+
                 </div>
 
             </div>
-        </section>
-        <div id="footer-bottom">
+            <div class="col span-1-of-3 contact-box">
 
+                <div id="footer-menu">
+                    <ul>
+
+                        <li><a href="#features">product</a></li>
+                        <li><a href="#partners">partners</a></li>
+                        <li><a href="#media">media</a></li>
+                        <li><a href="#say-hello">schedule demo</a>
+                        </li>
+                        <li><a href="#about-company">company</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-bottom">
             <div class="row">
-                <div class="col span-1-of-2">
+                <div class="col span-6-of-6">
                     <div id="footer-copyrights">
                         <p>Copyrights &copy; 2017 All Rights Reserved by DeepPiXEL inc.</p>
                     </div>
                 </div>
-                <div class="col span-1-of-2">
-                    <div id="footer-menu">
-                        <ul>
-
-                            <li><a href="#features">product</a>/</li>
-                            <li><a href="#about-company">company</a>/</li>
-                            <li><a href="#partners">partners</a>/</li>
-                            <li><a href="#media">media</a>/</li>
-                            <li><a href="#say-hello">schedule demo</a></li>
-                        </ul>
-
-                    </div>
-                </div>
             </div>
-
         </div>
-
-
-
     </footer>
 
 

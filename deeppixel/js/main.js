@@ -8,7 +8,7 @@ $(document).ready(function () {
         $(".container nav ul").toggleClass("open");
 
     });
-    
+
     /*set parent container to the height of the child*/
 
     var biggestHeight = 0;
@@ -29,7 +29,7 @@ $(document).ready(function () {
     /*smooth scrolling*/
     // Cache selectors
     var lastId,
-        topMenu = $(".nav"),
+        topMenu = $("nav"),
         topMenuHeight = topMenu.outerHeight() + 2,
         // All list items
         menuItems = topMenu.find("a"),
