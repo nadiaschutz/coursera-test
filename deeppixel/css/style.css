@@ -399,7 +399,9 @@ nav ul ul {
     background: #fff;
     position: absolute;
     top: 101%;
-    box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 60px 100px rgba(0, 0, 0, .4);*/
+    box-shadow: -3px 3px 10px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 3px 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -872,6 +874,7 @@ textarea::placeholder {
     max-width: 126px;
     border-radius: 50%;
     margin-left: 100px;
+    /*box-shadow: 0 60px 100px rgba(0, 0, 0, .4);*/
     /*box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .48);*/
 }
 
